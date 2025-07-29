@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: #000;
     color: #fff;
@@ -21,8 +23,8 @@ header {
 header .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 header nav ul {
@@ -52,14 +54,14 @@ header nav ul li a {
 }
 
 .hero h1 {
-    font-size: 80px;
+    font-size: 100px;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 30px;
 }
 
 .about {
@@ -140,7 +142,7 @@ header nav ul li a {
 }
 
 .contact h2 {
-    font-size: 60px;
+    font-size: 80px;
     margin: 0;
 }
 
@@ -181,7 +183,7 @@ footer .social-links a {
     }
 }
 
-.hero h1, .hero p {
+.hero h1, .hero p, .about-content, .testimonial-item {
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -194,6 +196,19 @@ footer .social-links a {
 .portfolio-item.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .logo {
+    animation: slideIn 1s ease-in-out;
 }
 
 /* Media Queries */
