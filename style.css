@@ -62,6 +62,54 @@ header nav ul li a {
     margin-top: 20px;
 }
 
+.about {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.about-content p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.testimonials {
+    padding: 100px 50px;
+    background-color: #111;
+}
+
+.testimonial-item {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.testimonial-item .author {
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
 .portfolio {
     padding: 100px 50px;
     display: grid;
@@ -135,6 +183,17 @@ footer .social-links a {
 
 .hero h1, .hero p {
     animation: fadeIn 2s ease-in-out;
+}
+
+.portfolio-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Media Queries */
