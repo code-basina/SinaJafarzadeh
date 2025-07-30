@@ -16,8 +16,9 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 header .logo a {
@@ -87,6 +88,123 @@ header nav ul li a {
 
 .about-image img {
     width: 400px;
+    border-radius: 10px;
+}
+
+.yep-thats-me {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yep-thats-me-content {
+    max-width: 600px;
+}
+
+.yep-thats-me-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.yep-thats-me-content p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.yep-thats-me-images {
+    display: flex;
+    gap: 20px;
+}
+
+.yep-thats-me-images img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.snap-tap {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.snap-tap-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.snap-tap-images img {
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.subtle-cameo {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.subtle-cameo-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.subtle-cameo-images img {
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.magic-starts-here {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.magic-starts-here-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.magic-starts-here-images img {
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.blink-and-youll-miss-it {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.blink-and-youll-miss-it-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.blink-and-youll-miss-it-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.blink-and-youll-miss-it-images img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.save-ink {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.save-ink-content h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.save-ink-images img {
+    width: 800px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -210,6 +328,30 @@ footer .social-links a {
 header .logo {
     animation: slideIn 1s ease-in-out;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+}
+
+.scroll-to-top img {
+    width: 20px;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
